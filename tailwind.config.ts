@@ -22,7 +22,7 @@ const config: Config = {
         'box': ' 5px -5px 13px #2d6484, -5px 5px 13px #337094'
       },
       spacing: {
-        'window': '1400px'
+        'window': '1200px'
       }
     }
   },
