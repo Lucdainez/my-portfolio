@@ -1,62 +1,64 @@
 'use client';
 import Image from 'next/image';
 import ImageLuc from '../../../public/images/97261512.jpg';
-import { useState } from 'react';
-import Contact from './Contact';
-import MoreAboutMe from './MoreAboutMe';
+import { MdOutlineMail } from 'react-icons/md';
+import { CiLinkedin } from 'react-icons/ci';
+import { FaWhatsapp } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 export default function AboutMe() {
-  const [contact, setContact] = useState(false);
-  const [moreAboutMe, setMoreAboutMe] = useState(false);
-
-  const clickContact = () => {
-    if (contact === false) {
-      setContact(true);
-    } else {
-      setContact(false);
-    }
-  };
-
-  const clickMoreAboutMe = () => {
-    if (moreAboutMe === false) {
-      setMoreAboutMe(true);
-    } else {
-      setMoreAboutMe(false);
-    }
-  };
-
   return (
-    <section className="flex">
-      <section className="flex-auto">
+    <section className="flex justify-center mx-auto">
+      <section className="flex flex-col justify-center items-center content-center p-1.5 m-auto rounded-lg mt-5">
         <Image
           src={ImageLuc}
-          className="rounded h-64 w-64 ml-5 mt-5"
+          className="rounded h-64 w-64 mt-5"
           alt="retrato do Lucas"
         />
-      </section>
-      <section className="flex-auto justify-center items-center content-center p-1.5 mr-16 rounded-lg bg-back mt-5">
-        <h2 className="text-center">
-          <strong>Olá, meu nome é Lucas! Sou Desenvolvedor full-Stack!</strong>
+        <h2 className="text-center my-5">
+          <strong>Olá, meu nome é Lucas! Sou Desenvolvedor Back-End!</strong>
         </h2>
         <p className="text-center">
           <strong>Tenho 22 anos</strong>
         </p>
-        <div className="flex flex-col self-center mt-10 h-min w-28 m-auto">
-          <button
-            className="bg-sky-400/25 hover:bg-sky-400/50 text-slate-300 font-bold shadow-md shadow-sky-400/25 hover:shadow-sky-400/100 py-1 px-1 mb-5 rounded"
-            onClick={clickContact}
+        <aside className="flex flex-row self-center mt-5 h-min w-28 m-auto">
+          <motion.button
+            className="self-center m-auto rounded-lg shadow bg-sky-400/25 hover:bg-back h-8 w-8"
+            whileHover={{ scale: 1.2 }}
           >
-            <p>CONTATOS</p>
-          </button>
-          {contact && <Contact />}
-          <button
-            className="bg-sky-400/25 hover:bg-sky-400/50 text-slate-300 font-bold shadow-md shadow-sky-400/25 hover:shadow-sky-400/100 py-1 px-1 rounded"
-            onClick={clickMoreAboutMe}
+            <a
+              href="https://is.gd/link_email_lucas"
+              target="_blank"
+              className="flex"
+            >
+              <MdOutlineMail className="h-5 w-5 m-auto" />
+            </a>
+          </motion.button>
+          <motion.button
+            className="self-center m-auto rounded-lg shadow bg-sky-400/25 hover:bg-back h-8 w-8"
+            whileHover={{ scale: 1.2 }}
           >
-            <p>MAIS SOBRE MIM</p>
-          </button>
-          {moreAboutMe && <MoreAboutMe />}
-        </div>
+            <a
+              href="https://www.linkedin.com/in/lucas-dainez/"
+              target="_blank"
+              className="flex"
+            >
+              <CiLinkedin className="h-5 w-5 m-auto" />
+            </a>
+          </motion.button>
+          <motion.button
+            className="self-center m-auto rounded-lg shadow bg-sky-400/25 hover:bg-back h-8 w-8"
+            whileHover={{ scale: 1.2 }}
+          >
+            <a
+              href="https://api.whatsapp.com/send?phone=5561991003443"
+              target="_blank"
+              className="flex"
+            >
+              <FaWhatsapp className="h-5 w-5 m-auto" />
+            </a>
+          </motion.button>
+        </aside>
       </section>
     </section>
   );
