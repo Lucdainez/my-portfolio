@@ -34,7 +34,7 @@ export default function Skills() {
       exit={{ opacity: 0 }}
       transition={{ duration: 1 }}
     >
-      <section className="flex flex-wrap justify-around w-full m-10 m-auto">
+      <section className="flex flex-wrap justify-around w-full m-auto">
         <section className="flex flex-row overflow-x-auto  m-auto scrollbar">
           <motion.div
             className="flex justify-between px-10 m-5 rounded-lg bg-sky-400/25 shadow"

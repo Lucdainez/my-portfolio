@@ -15,11 +15,11 @@ export default function AboutMe() {
           className="rounded h-64 w-64 mt-5"
           alt="retrato do Lucas"
         />
-        <h2 className="text-center my-5">
-          <strong>Olá, meu nome é Lucas! Sou Desenvolvedor Back-End!</strong>
-        </h2>
-        <p className="text-center">
-          <strong>Tenho 22 anos</strong>
+        <h1 className="text-center my-5">
+          <strong>Olá, meu nome é Lucas!</strong>
+        </h1>
+        <p>
+          <strong>Sou Desenvolvedor Back-End</strong>
         </p>
         <aside className="flex flex-row self-center mt-5 h-min w-28 m-auto">
           <motion.button

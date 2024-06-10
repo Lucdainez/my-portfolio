@@ -9,7 +9,7 @@ export default function Home() {
   const [iSkills, setISkills] = useState(true);
   return (
     <main>
-      <section className="backdrop-blur-md w-full mx-auto rounded-lg shadow">
+      <section className="backdrop-blur-md w-full h-full xl:w-window mx-auto rounded-lg shadow">
         <AboutMe />
         <nav className="flex justify-center bg-sky-400/25 m-5 rounded-lg">
           <button
