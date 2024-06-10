@@ -3,24 +3,26 @@ import { motion } from 'framer-motion';
 export default function MoreAboutMe() {
   return (
     <motion.section
-      className="flex flex-col self-center w-96 mt-5"
-      initial={{ opacity: 0, scale: 0.5 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.5 }}
+      className="flex flex-col self-center w-80 mt-5 m-auto pt-5 pb-10 text-center"
+      initial={{ opacity: 0, scale: 0.5, x: 300 }}
+      animate={{ opacity: 1, scale: 1, x: 0 }}
+      transition={{ duration: 1.0 }}
     >
-      <p className="text-center">sociável, focado, descontraído</p>
+      <p>Lucas de Sousa Dainez Silva</p>
+      <p>Casado</p>
+      <p>21/08/2001</p>
+      <p>Brasilia/DF</p>
+      <p>Universitário</p>
       <br />
-      <p className="text-center w-6/12 m-auto">
-        2022 - Curso de Desenvolvimento Web Full Stack da Trybe
+      <p className="mb-2">2019 {`=>`} Formatura Ensino-médio </p>
+      <p className="mb-2">
+        2022 {`=>`} Curso de Desenvolvimento Web Full Stack da Trybe
       </p>
-      <div className="h-3 border-r-2 border-solid border-rose-500 m-auto"></div>
-      <p className="text-center w-6/12 m-auto">
-        2023 - Conclusão do Curso de Desenvolvimento Web Full Stack da Trybe
+      <p className="mb-2">
+        2023 {`=>`} Conclusão do Curso de Desenvolvimento Web Full Stack da
+        Trybe
       </p>
-      <div className="h-3 border-r-2 border-solid border-rose-500 m-auto"></div>
-      <p className="text-center w-6/12 m-auto">
-        2024 - Faculdade de Engenharia de Software na IESB
-      </p>
+      <p>2024 {`=>`} Faculdade de Engenharia de Software na IESB</p>
     </motion.section>
   );
 }
