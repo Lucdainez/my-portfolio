@@ -4,6 +4,7 @@ import AboutMe from './Components/AboutMe';
 import Skills from './Components/Skills';
 import MoreAboutMe from './Components/MoreAboutMe';
 import Projects from './Components/Projects';
+import { motion } from 'framer-motion';
 
 export default function Home() {
   const [iAboutMe, setIAboutMe] = useState(false);
@@ -13,7 +14,13 @@ export default function Home() {
     <main>
       <section className="backdrop-blur-md w-full h-full xl:w-window mx-auto rounded-lg shadow">
         <AboutMe />
-        <nav className="flex justify-center bg-sky-400/25 m-5 rounded-lg">
+        <motion.nav
+          className="flex justify-center bg-sky-400/25 m-5 rounded-lg"
+          initial={{ opacity: 0, x: -200 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 1 }}
+        >
           <button
             className="mx-3 my-2 hover:underline hover:decoration-solid"
             onClick={() => {
@@ -44,7 +51,7 @@ export default function Home() {
               <strong>Sobre Mim</strong>
             </p>
           </button>
-        </nav>
+        </motion.nav>
         {iSkills && <Skills />}
         {iAboutMe && <MoreAboutMe />}
         {iProjects && <Projects />}
