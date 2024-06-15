@@ -8,7 +8,13 @@ import { motion } from 'framer-motion';
 
 export default function AboutMe() {
   return (
-    <section className="flex justify-center mx-auto">
+    <motion.section
+      className="flex justify-center mx-auto"
+      initial={{ opacity: 0, y: -100 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1 }}
+    >
       <section className="flex flex-col justify-center items-center content-center p-1.5 m-auto rounded-lg mt-5">
         <Image
           src={ImageLuc}
@@ -60,6 +66,6 @@ export default function AboutMe() {
           </motion.button>
         </aside>
       </section>
-    </section>
+    </motion.section>
   );
 }

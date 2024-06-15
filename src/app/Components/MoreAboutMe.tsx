@@ -4,8 +4,8 @@ export default function MoreAboutMe() {
   return (
     <motion.section
       className="flex flex-col self-center w-80 mt-5 m-auto pt-5 pb-10 text-center"
-      initial={{ opacity: 0, scale: 0.5, x: 300 }}
-      animate={{ opacity: 1, scale: 1, x: 0 }}
+      initial={{ opacity: 0, y: 200 }}
+      animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.0 }}
     >
       <p>Lucas de Sousa Dainez Silva</p>

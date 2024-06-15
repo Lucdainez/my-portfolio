@@ -29,8 +29,8 @@ export default function Skills() {
   return (
     <motion.section
       className="flex flex-col"
-      initial={{ opacity: 0, y: 100 }}
-      animate={{ opacity: 1,  y: 0 }}
+      initial={{ opacity: 0, y: 200 }}
+      animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 1 }}
     >
@@ -58,7 +58,7 @@ export default function Skills() {
                 <h6 className="text-center pb-1">
                   <strong>REACT</strong>
                 </h6>
-                <p className="text-center">
+                <p className="text-center font-sans">
                   Biblioteca javascript usada para construir interface de
                   usuário
                 </p>
@@ -86,7 +86,7 @@ export default function Skills() {
                 <h6 className="text-center pb-1">
                   <strong>HTML5</strong>
                 </h6>
-                <p className="text-center">
+                <p className="text-center font-sans">
                   Linguagem de marcação textual para criar a estrutura das
                   páginas
                 </p>
@@ -114,7 +114,7 @@ export default function Skills() {
                 <h6 className="text-center pb-1">
                   <strong>CSS3</strong>
                 </h6>
-                <p className="text-center">
+                <p className="text-center font-sans">
                   linguagem de estilo para elementos HTML
                 </p>
               </motion.aside>
@@ -141,9 +141,9 @@ export default function Skills() {
                 <h6 className="text-center pb-1">
                   <strong>GIT</strong>
                 </h6>
-                <p className="text-center">
-                  Sistema de controle para histórico de
-                  alterações em arquivos e projetos
+                <p className="text-center font-sans">
+                  Sistema de controle para histórico de alterações em arquivos e
+                  projetos
                 </p>
               </motion.aside>
             )}
@@ -169,7 +169,7 @@ export default function Skills() {
                 <h6 className="text-center pb-1">
                   <strong>GITHUB</strong>
                 </h6>
-                <p className="text-center">
+                <p className="text-center font-sans">
                   Plataforma de hospedagem de código-fonte e arquivos
                 </p>
               </motion.aside>
@@ -196,9 +196,8 @@ export default function Skills() {
                 <h6 className="text-center pb-1">
                   <strong>JAVASCRIPT</strong>
                 </h6>
-                <p className="text-center">
-                  Linguagem de programação com script em
-                  alto nível
+                <p className="text-center font-sans">
+                  Linguagem de programação com script em alto nível
                 </p>
               </motion.aside>
             )}
@@ -228,7 +227,7 @@ export default function Skills() {
                 <h6 className="text-center pb-1">
                   <strong>REDUX</strong>
                 </h6>
-                <p className="text-center">
+                <p className="text-center font-sans">
                   Biblioteca para armazenamento de estados
                 </p>
               </motion.aside>
@@ -255,7 +254,7 @@ export default function Skills() {
                 <h6 className="text-center pb-1">
                   <strong>NODE</strong>
                 </h6>
-                <p className="text-center">Ambiente de execução JavaScript</p>
+                <p className="text-center font-sans">Ambiente de execução JavaScript</p>
               </motion.aside>
             )}
           </motion.div>
@@ -280,7 +279,7 @@ export default function Skills() {
                 <h6 className="text-center pb-1">
                   <strong>MYSQL</strong>
                 </h6>
-                <p className="text-center">Banco de dados popular e poderoso</p>
+                <p className="text-center font-sans">Banco de dados popular e poderoso</p>
               </motion.aside>
             )}
           </motion.div>
@@ -306,7 +305,7 @@ export default function Skills() {
                 <h6 className="text-center pb-1">
                   <strong>DOCKER</strong>
                 </h6>
-                <p className="text-center">
+                <p className="text-center font-sans">
                   Tecnologia de conteinerização open source
                 </p>
               </motion.aside>
@@ -333,9 +332,7 @@ export default function Skills() {
                 <h6 className="text-center pb-1">
                   <strong>TYPESCRIPT</strong>
                 </h6>
-                <p className="text-center">
-                  Superconjunto de JavaScript
-                </p>
+                <p className="text-center font-sans">Superconjunto de JavaScript</p>
               </motion.aside>
             )}
           </motion.div>
