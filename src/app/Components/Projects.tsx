@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { projects, Iproject } from '../../../data/ListProjects';
+import { projects, Iproject } from '../../../public/data/ListProjects';
 import {
   Modal,
   ModalContent,
