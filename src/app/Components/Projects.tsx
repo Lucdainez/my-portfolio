@@ -40,6 +40,7 @@ export default function Projects() {
             className="m-auto w-full sm:w-32 h-32"
             onPress={onOpen}
             onClick={() => setDataProject(project)}
+            onTouchStart={() => setDataProject(project)}
           >
             <motion.h2
               whileHover={{ scale: 1.1 }}
