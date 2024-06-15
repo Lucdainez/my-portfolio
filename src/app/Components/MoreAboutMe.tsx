@@ -16,13 +16,10 @@ export default function MoreAboutMe() {
       <br />
       <p className="mb-2">2019 {`=>`} Formatura Ensino-médio </p>
       <p className="mb-2">
-        2022 {`=>`} Curso de Desenvolvimento Web Full Stack da Trybe
+        2022 - 2023 {`=>`} Curso de Desenvolvimento Web Full Stack da Trybe
       </p>
-      <p className="mb-2">
-        2023 {`=>`} Conclusão do Curso de Desenvolvimento Web Full Stack da
-        Trybe
-      </p>
-      <p>2024 {`=>`} Faculdade de Engenharia de Software na IESB</p>
+
+      <p>2024 - 2028 {`=>`} Faculdade de Engenharia de Software na IESB</p>
     </motion.section>
   );
 }
