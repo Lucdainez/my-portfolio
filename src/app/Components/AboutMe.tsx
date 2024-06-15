@@ -33,7 +33,7 @@ export default function AboutMe() {
             whileHover={{ scale: 1.2 }}
           >
             <a
-              href="https://is.gd/link_email_lucas"
+              href="mailto:lucdainez@gmail.com"
               target="_blank"
               className="flex"
             >
